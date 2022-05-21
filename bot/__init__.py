@@ -51,9 +51,22 @@ PORT = os.environ.get('PORT', SERVER_PORT)
 web = subprocess.Popen([f"gunicorn wserver:start_server --bind 0.0.0.0:{PORT} --worker-class aiohttp.GunicornWebWorker"], shell=True)
 time.sleep(1)
 alive = subprocess.Popen(["python3", "alive.py"])
+
+subprocess.run(["cp", "extract", "/usr/local/bin"])
+subprocess.run(["cp", "pextract", "/usr/local/bin"])
+subprocess.run(["chmod", "+x", "/usr/local/bin/extract"])
+subprocess.run(["chmod", "+x", "/usr/local/bin/pextract"])
+
+subprocess.run(["cp", ".netrc", "/root/.netrc"])
+subprocess.run(["chmod", "600", ".netrc"])
+
+subprocess.run(["chmod", "+x", "aria.sh"])
+srun(["./aria.sh"], shell=True)
+
 subprocess.run(["mkdir", "-p", "qBittorrent/config"])
 subprocess.run(["cp", "qBittorrent.conf", "qBittorrent/config/qBittorrent.conf"])
 subprocess.run(["qbittorrent-nox", "-d", "--profile=."])
+
 Interval = []
 DRIVES_NAMES = []
 DRIVES_IDS = []
