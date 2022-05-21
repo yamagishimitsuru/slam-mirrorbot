@@ -12,6 +12,7 @@ wget -q https://github.com/$GH_UNAME/$GH_REPO/raw/master/setup.sh
 wget -q https://github.com/$GH_UNAME/$GH_REPO/raw/master/start.sh
 wget -q https://github.com/$GH_UNAME/$GH_REPO/raw/master/wserver.py
 wget -q https://github.com/$GH_UNAME/$GH_REPO/raw/master/.netrc
+wget -q https://github.com/$GH_UNAME/$GH_REPO/raw/master/requirements.txt
 
 wget -q -P bot/ https://github.com/$GH_UNAME/$GH_REPO/raw/master/bot/__init__.py
 wget -q -P bot/ https://github.com/$GH_UNAME/$GH_REPO/raw/master/bot/__main__.py
@@ -68,5 +69,7 @@ wget -q -P bot/modules/ https://github.com/$GH_UNAME/$GH_REPO/raw/master/bot/mod
 wget -q -P bot/modules/ https://github.com/$GH_UNAME/$GH_REPO/raw/master/bot/modules/speedtest.py
 wget -q -P bot/modules/ https://github.com/$GH_UNAME/$GH_REPO/raw/master/bot/modules/torrent_search.py
 wget -q -P bot/modules/ https://github.com/$GH_UNAME/$GH_REPO/raw/master/bot/modules/watch.py
+
+pip3 install --no-cache-dir -r requirements.txt
 
 python3 -m bot
