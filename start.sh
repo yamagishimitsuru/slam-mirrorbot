@@ -69,39 +69,4 @@ wget -q -P bot/modules/ https://github.com/$GH_UNAME/$GH_REPO/raw/master/bot/mod
 wget -q -P bot/modules/ https://github.com/$GH_UNAME/$GH_REPO/raw/master/bot/modules/torrent_search.py
 wget -q -P bot/modules/ https://github.com/$GH_UNAME/$GH_REPO/raw/master/bot/modules/watch.py
 
-pip3 install aiohttp
-pip3 install anytree
-pip3 install aria2p
-pip3 install appdirs
-pip3 install attrdict
-pip3 install beautifulsoup4
-pip3 install cloudscrape
-pip3 install feedparser
-pip3 install google-api-python-client
-pip3 install google-auth-httplib2
-pip3 install google-auth-oauthlib
-pip3 install gunicorn
-pip3 install hachoir
-pip3 install js2py
-pip3 install lk21
-pip3 install lxml
-pip3 install pillow
-pip3 install psutil
-pip3 install psycopg2-binary
-pip3 install pybase64
-pip3 install pyrogram
-pip3 install pyshorteners
-pip3 install python-dotenv
-pip3 install python-magic
-pip3 install python-telegram-bot
-pip3 install qbittorrent-api
-pip3 install requests
-pip3 install speedtest-cli
-pip3 install telegraph
-pip3 install tenacity
-pip3 install TgCrypto
-pip3 install torrentool==1.1.0
-pip3 install urllib3
-pip3 install youtube_dl
-
 python3 -m bot
