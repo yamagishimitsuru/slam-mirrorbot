@@ -61,7 +61,7 @@ subprocess.run(["cp", ".netrc", "/root/.netrc"])
 subprocess.run(["chmod", "600", ".netrc"])
 
 subprocess.run(["chmod", "+x", "aria.sh"])
-srun(["./aria.sh"], shell=True)
+subprocess.run(["./aria.sh"], shell=True)
 
 subprocess.run(["mkdir", "-p", "qBittorrent/config"])
 subprocess.run(["cp", "qBittorrent.conf", "qBittorrent/config/qBittorrent.conf"])
