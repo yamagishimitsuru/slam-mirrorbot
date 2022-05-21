@@ -8,7 +8,6 @@ wget -q https://github.com/$GH_UNAME/$GH_REPO/raw/master/extract
 wget -q https://github.com/$GH_UNAME/$GH_REPO/raw/master/nodes.py
 wget -q https://github.com/$GH_UNAME/$GH_REPO/raw/master/pextract
 wget -q https://github.com/$GH_UNAME/$GH_REPO/raw/master/qBittorrent.conf
-wget -q https://github.com/$GH_UNAME/$GH_REPO/raw/master/start.sh
 wget -q https://github.com/$GH_UNAME/$GH_REPO/raw/master/wserver.py
 wget -q https://github.com/$GH_UNAME/$GH_REPO/raw/master/.netrc
 
