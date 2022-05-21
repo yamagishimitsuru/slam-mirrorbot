@@ -79,7 +79,7 @@ class TgUploader:
                     self.sent_msg = self.sent_msg.reply_video(video=up_path,
                                                               quote=True,
                                                               caption=cap_mono,
-                                                              parse_mode="html",
+                                                              parse_mode='HTML',
                                                               duration=duration,
                                                               width=480,
                                                               height=320,
@@ -98,7 +98,7 @@ class TgUploader:
                     self.sent_msg = self.sent_msg.reply_audio(audio=up_path,
                                                               quote=True,
                                                               caption=cap_mono,
-                                                              parse_mode="html",
+                                                              parse_mode='HTML',
                                                               duration=duration,
                                                               performer=artist,
                                                               title=title,
@@ -109,7 +109,7 @@ class TgUploader:
                     self.sent_msg = self.sent_msg.reply_photo(photo=up_path,
                                                               quote=True,
                                                               caption=cap_mono,
-                                                              parse_mode="html",
+                                                              parse_mode='HTML',
                                                               disable_notification=True,
                                                               progress=self.upload_progress)
                 else:
@@ -123,7 +123,7 @@ class TgUploader:
                                                              quote=True,
                                                              thumb=thumb,
                                                              caption=cap_mono,
-                                                             parse_mode="html",
+                                                             parse_mode='HTML',
                                                              disable_notification=True,
                                                              progress=self.upload_progress)
                 if self.thumb is None and thumb is not None and os.path.lexists(thumb):
